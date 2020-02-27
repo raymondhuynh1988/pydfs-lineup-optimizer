@@ -9,7 +9,7 @@ from pydfs_lineup_optimizer.rules import OptimizerRule, FanduelBaseballRosterRul
 class FanDuelSettings(BaseSettings):
     site = Site.FANDUEL
     budget = 60000
-    max_from_one_team = 4  # type: Optional[int]
+    max_from_one_team = 7  # type: Optional[int]
     min_teams = 3
 
 
@@ -40,7 +40,7 @@ class FanDuelFootballSettings(FanDuelSettings):
         LineupPosition('WR', ('WR', )),
         LineupPosition('WR', ('WR', )),
         LineupPosition('TE', ('TE', )),
-        LineupPosition('D', ('D', )),
+        LineupPosition('TE', ('TE', )),
         LineupPosition('FLEX', ('RB', 'WR', 'TE')),
     ]
 
